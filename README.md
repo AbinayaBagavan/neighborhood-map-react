@@ -14,6 +14,9 @@ This project is created using **create-react-app**
 * [Foursquare API](https://foursquare.com)-uesd to retrive info about locations
 ### Installation
 To run the project  clone/download the [neighborhood-map-react](https://github.com/AbinayaBagavan/neighborhood-map-react) 
-Run npm install
-Run npm start
+Run
+ ```sh
+npm install
+npm start
+```
 The app will run in localhost:3000
