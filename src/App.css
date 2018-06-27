@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.hidden {
+  display: none;
+}
+/**#map {
+  bottom:0px;
+  height: 100%;
+  left: 200px;
+  position: absolute;
+  right: 0px;
+}**/
+header {
+  width: 100%;
+  height: 3rem;
+  z-index: 1;
+  background: teal;
+  font-size: 2.5rem;
+  color: turquoise;
+}
+
+.menu-line {
+  width: 35px;
+  height: 5px;
+  background-color: turquoise;
+  margin: 6px 0;
+}
+
+.menu-icon {
+  float: left;
+  cursor: pointer;
+}
+
+.side-menu {
+  height: calc(100% - 60px);
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  top: 48px;
+  overflow-x: hidden;
+  background-color: teal;
+  transition: 0.5s;
+}
+
+.side-menu .form {
+  margin-top: 2px;
+  width: 100%;
+  height: auto;
+}
+
+.side-menu .form .search-bar {
+  padding: 10px 2px;
+  border: 0px;
+  outline: none;
+  width: 100%
+}
+ul {
+  padding: 0px;
+  margin-top: 10px;
+  left: 0; 
+}
+ul li {
+  border: 2px solid turquoise;
+  border-radius: 0px;
+  margin-top: 10px;
+  list-style: none;
+  color: white;
+  font-size: 15pt;
+  text-align: center;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#marker {
+  width: 100px;
+  height: 50px
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

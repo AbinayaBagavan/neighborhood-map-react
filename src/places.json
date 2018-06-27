@@ -1,0 +1,26 @@
+[
+    {
+    	"title":"French door restaurant",
+    	"location": {"lat": 11.013787, "lng": 76.94712000000004}
+    },
+    {
+    	"title":"Reliance fresh supermarket",
+    	"location":{"lat": 11.0255289,"lng": 76.93953469999997}
+    },
+    {
+    	"title":"Womens center Hospital", 
+    	"location":{"lat": 11.0339542,"lng": 76.95207230000005}
+    },
+    {
+    	"title":"Brooke fields Mall",
+    	"location":{"lat": 11.0094608,"lng":76.95913399999995}
+    },
+    {
+    	"title":"KG cinemas Movie theater", 
+    	"location":{"lat":11.0001796,"lng":76.97207930000002}
+    },
+    {	
+    	"title":"Voc park Zoo",
+    	"location":{"lat": 11.006824,"lng": 76.97023430000002}}
+    
+]
