@@ -25,13 +25,9 @@
 .hidden {
   display: none;
 }
-/**#map {
-  bottom:0px;
+#map {
   height: 100%;
-  left: 200px;
-  position: absolute;
-  right: 0px;
-}**/
+}
 header {
   width: 100%;
   height: 3rem;
@@ -102,6 +98,23 @@ a {
 #marker {
   width: 100px;
   height: 50px
+}
+
+/**break points**/
+@media screen and (max-width: 400px) {
+  header {
+    height: 4rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px)
+{
+  header {
+    height: 5rem;
+    font-size: 3rem;
+  }
+
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

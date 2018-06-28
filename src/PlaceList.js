@@ -24,7 +24,7 @@ class PlaceList extends Component {
 	//console.log(this.props.currentMarker[0])
 	document.getElementById("side-menu").classList.toggle("hidden");
 	}
-
+//filter results based on query entered
 	searchQuery(event){
 		this.props.closeWindow();
 		//console.log(this.props.currentMarker[0])

@@ -25,7 +25,7 @@ class App extends Component {
         window.initMap = this.initMap;
         LoadMapJS("https://maps.googleapis.com/maps/api/js?key=AIzaSyCG6THolKuCbFqZuAMiXDRGWVBkl8VsuiA&v=3&callback=initMap");
     }
-initMap() {
+initMap() {       //function to load map
 
     var self=this;
     var map=document.getElementById("map");
@@ -57,7 +57,7 @@ initMap() {
     this.createMarkers(map)
 }
 
-createMarkers(map) {
+createMarkers(map) {    //draw markers on locations
 
     let self=this;
     //var markers=[];
@@ -92,7 +92,7 @@ createMarkers(map) {
     //console.log(this.state.currentMarker)
 
 }
-makeMarkerIcon(markerColor) 
+makeMarkerIcon(markerColor)     //Icon maker change of icons over mouse events
 {
     var markerImage = new window.google.maps.MarkerImage(
           'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|'+ markerColor +
@@ -104,9 +104,10 @@ makeMarkerIcon(markerColor)
     return markerImage;
 }
 
-openMarker(marker) {
+openMarker(marker) {      //opening infoWindow of clicked marker
   //let self=this;
   //console.log(marker)
+  //Foursqaure.com authentication
   var clientId="EXYQCVBF2CDQX31NAPC0YZ1Y05LCW2YEVEIYYYUFZENZSPQF";
   var clientSecret="V3UTPALNGPLSWXDKX53B5GBOZWNT3WO5JYVJKXNXTBAU23VH";
   const url = "https://api.foursquare.com/v2/venues/search?client_id=" + clientId + "&client_secret=" + clientSecret + "&v=20130815&ll=" + marker.getPosition().lat() + "," + marker.getPosition().lng() + "&limit=1";
@@ -123,6 +124,7 @@ openMarker(marker) {
   }
 }
 
+//get the information from FourSquares.com
 getInfo(url) {
 
   let self=this.state.infowindow;
@@ -160,6 +162,7 @@ getInfo(url) {
     })
 
 }
+//closing infowindow
 closeWindow() {
   if(this.state.currentMarker)
   {
