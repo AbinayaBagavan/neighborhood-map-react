@@ -20,3 +20,14 @@ npm install
 npm start
 ```
 The app will run in localhost:3000
+
+### Build
+This project makes use of service worker which makes the websites content  available offline which better than nothing displayed. 
+
+The default react serviceworker works only in **production** mode to do that run the following commands to deploy the project in hosted destination.
+
+```sh
+npm run build
+npm run deploy 
+```
+For online view click here -> https://abinayabagavan.github.io/neighborhood-map-react/

@@ -179,7 +179,7 @@ closeWindow() {
     return (
       <div className="App">
       <PlaceList currentMarker={this.state.markersArray} infowindow={this.state.infowindow} openWindow={this.openMarker} closeWindow={this.closeWindow} />
-      <div id="map"></div>
+      <div id="map" aria-label="locations" role="application"></div>
       </div>
     );
     }

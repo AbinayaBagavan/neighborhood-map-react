@@ -22,8 +22,9 @@ console.log(isLocalhost)
 
 export default function register() {
   console.log("Inside function register")
-  if ('serviceWorker' in navigator) {
+  if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator){
     // The URL constructor is available in all browsers that support SW.
+    console.log("Running"+process.env.NODE_ENV);
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location);
     if (publicUrl.origin !== window.location.origin) {
       // Our service worker won't work if PUBLIC_URL is on a different origin
@@ -54,6 +55,9 @@ export default function register() {
         registerValidSW(swUrl);
       }
     });
+  }
+  else {
+    console.log(process.env.NODE_ENV)
   }
 }
 
