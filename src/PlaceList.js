@@ -72,9 +72,9 @@ class PlaceList extends Component {
 					<div className="menu-line"/>
 				</div>
 				<div id="side-menu" className="side-menu hidden">
-					<div className="form" role="form">
+					<div id="filter-places" className="form" role="form">
 						<input type="text"
-						aria-labelledby="filter places"
+						aria-labelledby="filter-places"
 						placeholder="filter"
 						className="search-bar"
 						role="search"
